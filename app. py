@@ -1,28 +1,2 @@
-
 print("Hola, soy AhorraSuper 👋")
 print("Aquí empezaré a comparar precios de supermercados.")
-# app.py
-
-# Lista de productos (vacía al inicio)
-productos = []
-
-def añadir_producto(nombre, cantidad=1):
-    producto = {
-        "nombre": nombre,
-        "cantidad": cantidad
-    }
-    productos.append(producto)
-    print(f"✅ Producto añadido: {nombre} (x{cantidad})")
-
-def mostrar_lista():
-    if not productos:
-        print("🛒 Tu lista está vacía")
-    else:
-        print("🛒 Lista de productos:")
-        for i, p in enumerate(productos, start=1):
-            print(f"{i}. {p['nombre']} (x{p['cantidad']})")
-
-# Ejemplo de uso
-añadir_producto("Leche", 2)
-añadir_producto("Pan", 1)
-añadir_producto("Huevos", 12)
